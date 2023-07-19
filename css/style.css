@@ -53,6 +53,16 @@ img {
   outline: 0;
 }
 
+.section-reset{
+  padding: 80px 0;
+}
+
+.section-title{
+font-size: 48px;
+font-weight: 400;
+line-height: normal;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
@@ -66,6 +76,7 @@ img {
   background-color: transparent;
   cursor: pointer;
 }
+
 
 .header {
   padding: 30px 0;
@@ -144,4 +155,10 @@ img {
   font-weight: 700;
   line-height: normal;
   color: var(--color-white);
+}
+
+.about-us__title{
+  margin: 0;
+  margin-bottom: 16px;
+  color: var(--color-dark-charcoal);
 }
