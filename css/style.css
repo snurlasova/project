@@ -35,3 +35,15 @@ img {
   --color-bright-grey: #ECECEC;
   --color-white: #FFFFFF;
 }
+
+.page {
+  min-width: 320px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 0 160px;
+}
