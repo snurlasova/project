@@ -18,3 +18,20 @@ a {
 img {
   max-width: 100%;
 }
+
+:root {
+  --color-black: #000000;
+  --color-dark-charcoal: #333333;
+  --сolor-granite-gray: #666666;
+  --color-grey: #999999;
+  --color-lavender: #D1A9F0;
+  --color-lilac: #C283F3;
+  --color-purple:#9D5CD0;
+  --color-violet:#7943A4;
+  --color-green:#30BF39;
+  --color-light-blue:#26A5E4;
+  --color-red: #D11616;
+  --color-light-grey: #CACACA;
+  --color-bright-grey: #ECECEC;
+  --color-white: #FFFFFF;
+}
