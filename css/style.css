@@ -36,7 +36,7 @@ img {
 
 .page {
   min-width: 320px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -51,14 +51,14 @@ img {
   outline: 0;
 }
 
-.section-reset{
+.section-reset {
   padding: 85px 0;
 }
 
-.section-title{
-font-size: 48px;
-font-weight: 400;
-line-height: normal;
+.section-title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .list-reset {
@@ -74,7 +74,6 @@ line-height: normal;
   background-color: transparent;
   cursor: pointer;
 }
-
 
 .header {
   padding: 28px 0;
@@ -155,8 +154,16 @@ line-height: normal;
   color: var(--color-white);
 }
 
-.about-us__title{
+.about-us__title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
   color: var(--color-dark-charcoal);
+}
+
+.about-us__descr {
+  margin: 0;
+  font-size: 16px;
+  line-height: 32px; /* 200% */
+  color: var(--color-dark-charcoal);
+  max-width: 1080px;
 }
