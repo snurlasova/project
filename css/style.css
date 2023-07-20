@@ -51,10 +51,6 @@ img {
   outline: 0;
 }
 
-.section-reset {
-  padding: 85px 0;
-}
-
 .section-title {
   font-size: 48px;
   font-weight: 400;
@@ -117,6 +113,8 @@ img {
   background-image: url("../imgs/hero__img.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: var(--color-dark-charcoal);
+  background-size: cover;
 }
 
 .hero__content {
@@ -154,6 +152,10 @@ img {
   color: var(--color-white);
 }
 
+.about-us {
+  padding: 85px 0 70px 0;
+}
+
 .about-us__title {
   margin: 0;
   margin-bottom: 22px;
@@ -166,4 +168,86 @@ img {
   line-height: 32px; /* 200% */
   color: var(--color-dark-charcoal);
   max-width: 1080px;
+}
+
+.gallery {
+  background-image: url("../imgs/gallery_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-dark-charcoal);
+  background-size: cover;
+}
+
+.gallery__title {
+  margin: 0;
+  padding-top: 85px;
+  color: var(--color-white);
+}
+
+.gallery__content {
+  padding-bottom: 80px;
+}
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio-name {
+  font-size: 16px;
+  line-height: 32px; /* 200% */
+  color: var(--color-white);
+}
+
+.radio{
+  display: flex;
+  align-items: center;
+}
+
+.custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid var(--color-white);
+  width: 12px;
+  height: 12px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-radio:focus + label::before {
+  box-shadow: var(--color-lilac);
+}
+.custom-radio:focus:not(:checked) + label::before {
+  border-color: var(--color-lilac);
+}
+
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: var(--color-lilac);
+}
+
+.custom-radio:not(:disabled):active + label::before {
+  background-color: var(--color-lilac);
+  border-color: var(--color-lilac);
+}
+
+.custom-radio:checked + label::before {
+  border-color: var(--color-lilac);
+  background-color: transparent;
+  background-image: url("../imgs/Ellipse.svg");
+}
+
+.custom-radio:disabled + label::before {
+  background-color: transparent;
 }
