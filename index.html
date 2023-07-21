@@ -101,40 +101,37 @@
         <div class="container">
           <h2 class="gallery__title section-title">Галерея</h2>
           <div class="gallery__content">
-            <div class="gallery__radio-group">
-              <div class="radio">
-                <input
-                class="custom-radio"
-                type="radio"
-                id="radio-2"
-                name="XIX century"
-                value="XIX century"
-                />
-                <label class="radio-name" for="color-1">XIX век</label>
-              </div>
-              <div class="radio">
-                <input
-                class="custom-radio"
-                type="radio"
-                id="radio-3"
-                name="XX century"
-                value="XX century"
-                />
-                <label class="radio-name" for="color-2">XX век</label>
-              </div>
-              <div class="radio">
-                <input
-                  class="custom-radio"
-                  type="radio"
-                  id="radio-3"
-                  name="XX century"
-                  value="XX century"
-                />
-                <label class="radio-name" for="color-3">Современность</label>
-              </div>
-            </div>
-            <ul class="gallery__list">
-              li.gall
+            <ul class="checkbox-items__list flex list-reset">
+              <li class="checkbox-items__list-item">
+                <label class="custom-checkbox flex">
+                  <input type="checkbox" name="check-1" class="custom-checkbox__input">
+                  <span class="custom-checkbox__text">XIX век</span>
+                </label>
+              </li>
+              <li class="checkbox-items__list-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="check-1" class="custom-checkbox__input">
+                  <span class="custom-checkbox__text">XX век</span>
+                </label>
+              </li>
+              <li class="checkbox-items__list-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="check-1" class="custom-checkbox__input">
+                  <span class="custom-checkbox__text">Современность</span>
+                </label>
+              </li>
+            </ul>
+
+            <ul class="gallery__list list-reset">
+              <li class="gallery__item">
+                <img src="./imgs/gallery__img_1.jpg" alt="Первая картина" class="gallery__img">
+              </li>
+              <li class="gallery__item">
+                <img src="./imgs/gallery__img_2.jpg" alt="Вторая картина" class="gallery__img">
+              </li>
+              <li class="gallery__item">
+                <img src="./imgs/gallery__img_3.jpg" alt="Третья картина" class="gallery__img">
+              </li>
             </ul>
           </div>
 
