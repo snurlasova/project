@@ -242,11 +242,6 @@ img {
   border-color: var(--color-lilac);
 }
 
-.custom-radio:checked + label::before {
-  border-color: var(--color-lilac);
-  background-color: transparent;
-  background-image: url("../imgs/Ellipse.svg");
-}
 
 .custom-radio:disabled + label::before {
   background-color: transparent;
