@@ -176,6 +176,7 @@ img {
   background-repeat: no-repeat;
   background-color: var(--color-dark-charcoal);
   background-size: cover;
+  margin-bottom: 88px;
 }
 
 .gallery__title {
@@ -186,7 +187,7 @@ img {
 }
 
 .gallery__content {
- padding-bottom: 76px;
+  padding-bottom: 75px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -231,38 +232,52 @@ img {
   left: 4px;
   top: 13px;
   width: 4px;
-  height: 4px;;
+  height: 4px;
   border: 2px solid var(--color-lilac);
   border-radius: 100%;
   opacity: 0;
 }
 
-.custom-checkbox__input:checked+.custom-checkbox__text::before {
+.custom-checkbox__input:checked + .custom-checkbox__text::before {
   border: 1px solid var(--color-lilac);
 }
 
-.custom-checkbox__input:checked+.custom-checkbox__text::after {
+.custom-checkbox__input:checked + .custom-checkbox__text::after {
   opacity: 1;
 }
 
-.custom-checkbox__input:focus-visible+.custom-checkbox__text {
+.custom-checkbox__input:focus-visible + .custom-checkbox__text {
   outline: 2px solid var(--color-lilac);
   outline-offset: 4px;
 }
 
-.custom-checkbox__input:hover:not(:checked)+.custom-checkbox__text {
+.custom-checkbox__input:hover:not(:checked) + .custom-checkbox__text {
   color: var(--color-lilac);
 }
 
-.custom-checkbox__input:hover:not(:checked)+.custom-checkbox__text::before {
+.custom-checkbox__input:hover:not(:checked) + .custom-checkbox__text::before {
   border: 1px solid var(--color-lilac);
 }
 
-.gallery__list{
+.gallery__list {
   display: flex;
   justify-content: space-between;
 }
 
-.gallery__item:not(:last-child){
+.gallery__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--color-dark-charcoal);
+}
+
+.catalog__descr {
+  margin: 0;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-dark-charcoal);
+  max-width: 1080px;
 }
