@@ -32,6 +32,7 @@ img {
   --color-light-grey: #cacaca;
   --color-bright-grey: #ececec;
   --color-white: #ffffff;
+  --gap: 50px;
 }
 
 .page {
@@ -55,6 +56,13 @@ img {
   font-size: 48px;
   font-weight: 400;
   line-height: normal;
+}
+
+.section__descr{
+  color: var(--color-dark-charcoal);
+font-size: 16px;
+font-weight: 400;
+line-height: 32px;
 }
 
 .list-reset {
@@ -168,9 +176,6 @@ img {
 
 .about-us__descr {
   margin: 0;
-  font-size: 16px;
-  line-height: 32px; /* 200% */
-  color: var(--color-dark-charcoal);
   max-width: 1080px;
 }
 
@@ -273,7 +278,7 @@ img {
 }
 
 .catalog {
-  margin-bottom: 80px;
+  margin-bottom: 88px;
 }
 
 .catalog__title {
@@ -285,9 +290,6 @@ img {
 .catalog__descr {
   margin: 0;
   margin-bottom: 38px;
-  font-size: 16px;
-  line-height: 32px;
-  color: var(--color-dark-charcoal);
   max-width: 1080px;
 }
 
@@ -321,9 +323,6 @@ img {
 
 .catalog-content-descr {
   margin: 0;
-  color: var(--color-dark-charcoal);
-  font-size: 16px;
-  line-height: 32px;
   max-width: 800px;
 }
 
@@ -331,7 +330,74 @@ img {
   margin-bottom: 50px;
 }
 
-.events__title{
+.events{
+  margin-bottom: 80px;
+}
+
+.events__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.events__blog {
+  overflow: hidden;
+  border: 1px solid var(--color-light-grey);
+}
+
+.events__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.events__item {
+  width: calc((100% - (var(--gap) * 2)) / 3);
+}
+
+.events__item:not(:nth-child(3n)) {
+  margin-right: 50px;
+}
+
+.events__description {
+  padding: 15px 50px 50px 50px;
+}
+
+.events__item:nth-child(3) .events__descr{
+ margin-bottom: 102px;
+}
+
+.events__time,
+.events__place {
+  color: var(--color-grey);
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.events__time{
+  margin-bottom: 15px;
+}
+
+.events__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+  color: var(--color-dark-charcoal);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.events__descr{
+  margin: 0;
+  margin-bottom: 76px;
+}
+
+.project__title{
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.project__descr{
+  margin: 0;
+  max-width: 1080px;
 }
