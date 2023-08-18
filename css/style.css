@@ -427,7 +427,7 @@ img {
 }
 
 .address{
- margin-bottom: 45px;
+ margin-bottom: 38px;
 }
 
 .address__blog {
@@ -504,5 +504,23 @@ color: var(--color-purple);
 }
 
 .connection-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer{
+  background-color: #000000;
+}
+
+.footer__content{
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 0;
+}
+
+.social-list{
+  display: flex;
+}
+
+.social-item:not(:last-child) {
   margin-right: 20px;
 }
