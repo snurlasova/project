@@ -109,7 +109,7 @@ img {
 }
 
 .header__logo {
-  margin-right: 179px;
+  margin-right: 172px;
 }
 
 .header__nav {
@@ -122,15 +122,21 @@ img {
 }
 
 .nav__link {
+  padding: 2px 8px;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
   color: var(--color-white);
+  outline: 2px solid transparent;
+  transition-property: color, background-color, outline;
+  transition-duration: 0.3s;
 }
 
 .nav__link:focus-visible {
-  background-color: var(--color-violet);
   color: var(--color-white);
+  background-color: var(--color-purple);
+  outline-color: var(--color-purple);
+  outline-offset: 0;
 }
 
 .nav__link:hover:not(:focus-visible) {
@@ -144,7 +150,7 @@ img {
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 96px;
+  margin-right: 78px;
 }
 
 .search {
@@ -438,33 +444,25 @@ img {
 }
 
 .events__link {
-  position: relative;
+  font-size: 16px;
+  line-height: 32px; /* 200% */
   color: var(--color-purple);
   border-bottom: 1px solid var(--color-purple);
-}
-
-.events__link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 35px;
-  background-color: var(--color-purple);
-  color: var(--color-white);
-  border-bottom: 1px solid var(--color-white);
-  opacity: 0;
+  transition-property: color, background-color, outline;
+  transition-duration: 0.3s;
 }
 
 .events__link:focus-visible {
-  background-color: var(--color-purple);
+  padding: 2px 8px;
   color: var(--color-white);
-  border-bottom: 1px solid var(--color-white);
-  height: 35px;
+  background-color: var(--color-purple);
+  outline-color: var(--color-purple);
+  outline-offset: 2px;
 }
 
-.events__link:focus-visible::after {
-  opacity: 1;
+.events__link:hover:not(:focus-visible) {
+  color: var(--color-violet);
+  border-bottom-color: var(--color-violet);
 }
 
 .project {
@@ -547,10 +545,31 @@ img {
   width: 270px;
   height: 50px;
   flex-shrink: 0;
+  background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .form-input {
   margin-right: 15px;
+}
+
+.form-input:focus-visible {
+  background-color: var(--color-grey);
+}
+
+.form-input:hover:not(:focus-visible) {
+  background-color: var(--color-grey);
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  background-color: var(--color-white);
+  color: var(--color-dark-charcoal);
+}
+
+input[type="tel"]:focus {
+  background-color: var(--color-white);
+  color: var(--color-dark-charcoal);
 }
 
 .form-btn {
@@ -579,7 +598,7 @@ img {
 }
 
 .form-btn:active:not(:focus-visible),
-.form:active {
+.form-btn:active {
   outline: 3px solid var(--color-lavender);
   background-color: var(--color-violet);
   color: var(--color-white);
@@ -605,18 +624,38 @@ img {
   fill: var(--color-green);
 }
 
-.connection-whatsapp:focus-visible {
+.connection-link:focus-visible .connection-whatsapp {
   opacity: 0.5;
 }
 
-.connection-whatsapp:hover:not(:focus-visible) {
+.connection-link:hover:not(:focus-visible) .connection-whatsapp {
   opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
 }
 
-.connection-whatsapp:active:not(:focus-visible),
-.connection-whatsapp:active {
+.connection-link:active:not(:focus-visible) .connection-whatsapp {
   fill: var(--color-green);
+  opacity: 1;
+  border: 1px solid var(--color-purple);
+  border-radius: 100%;
+}
+
+.connection-telegram {
+  fill: var(--color-light-blue);
+}
+
+.connection-link:focus-visible .connection-telegram {
+  opacity: 0.5;
+}
+
+.connection-link:hover:not(:focus-visible) .connection-telegram {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.connection-link:active:not(:focus-visible) .connection-telegram {
+  fill: var(--color-light-blue);
+  opacity: 1;
   border: 1px solid var(--color-purple);
   border-radius: 100%;
 }
@@ -637,4 +676,21 @@ img {
 
 .social-item:not(:last-child) {
   margin-right: 20px;
+}
+
+.footer__svg {
+  fill: var(--color-light-grey);
+}
+
+.social-link:focus-visible .footer__svg {
+  fill: var(--color-white);
+}
+
+.social-link:hover:not(:focus-visible) .footer__svg {
+  fill: var(--color-white);
+  transition: fill 0.3s ease-in-out;
+}
+
+.social-link:active:not(:focus-visible) .footer__svg {
+  fill: var(--color-purple);
 }
