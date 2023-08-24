@@ -98,4 +98,12 @@
     max-width: 100%;
     width: 100%;
   }
+
+  .events__item:not(:nth-child(3n)) {
+    margin-right: 27px;
+  }
+
+  .events__description {
+    padding: 15px 34px 41px 34px;
+  }
 }
