@@ -112,12 +112,20 @@
     margin-right: 27px;
   }
 
-  .events__description {
-    padding: 15px 34px 41px 34px;
+  .events__item {
+    padding: 214px 34px 41px 34px;
   }
 
-   .events__img{
-    min-height: 200px;
+  .events__img1 {
+    background-image: url("../imgs/events_img_1024_1.jpg");
+  }
+
+  .events__img2 {
+    background-image: url("../imgs/events_img_1024_2.jpg");
+  }
+
+  .events__img3 {
+    background-image: url("../imgs/events_img_1024_3.jpg");
   }
 
   .events__wrap{
@@ -139,7 +147,7 @@
 }
 
 .events {
-  margin-bottom: 71px;
+  margin-bottom: 90px;
 }
 
 .project__descr{
@@ -147,12 +155,30 @@
 }
 
 .contacts{
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 28px;
 }
 
 .footer__svg{
   width: 60px;
   height: 60px;
 }
+
+.footer__content{
+  padding-top: 43px;
+  padding-bottom: 35px;
+}
+
+}
+
+@media (max-width: 962px){
+ .events__item{
+  max-width: 100%;
+  width: 100%;
+ }
+
 
 }
