@@ -3,6 +3,7 @@
     margin-right: auto;
   }
 
+
   .checkbox-items__list {
     margin-right: 50px;
   }
@@ -465,6 +466,28 @@
   .search {
     width: 18px;
     height: 18px;
+  }
+
+  .search-close .svg-close{
+    width: 18px;
+    height: 18px;
+  }
+
+  .search-form {
+    top: 10px;
+    right: 0;
+    width: 100%;
+  }
+  .search-submit {
+    margin-right: 10px;
+  }
+
+
+  .search-input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-light-grey);
   }
 
   .header__svg {

@@ -270,6 +270,82 @@ img {
   fill: var(--color-purple);
 }
 
+
+.search-submit .search {
+  fill: var(--color-lilac);
+}
+
+
+.search-submit:focus-visible .search {
+  outline: none;
+  outline: 2px solid var(--color-purple);
+  outline-offset: 3px;
+  fill: var(--color-purple);
+}
+
+.search-submit:hover:not(:focus-visible) .search {
+  fill: var(--color-purple);
+}
+
+.search-submit:active:not(:focus-visible) .search {
+  fill: var(--color-violet);
+}
+
+.search-close .svg-close{
+  width: 28px;
+  height: 28px;
+}
+
+.search-close:focus-visible .svg-close{
+  outline: none;
+  outline: 2px solid var(--color-lilac);
+  outline-offset: 5px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 539px;
+  padding: 16px 13px 16px 25px;
+  z-index: 3;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  background-color: var(--color-white);
+  border-radius: 24px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  visibility: hidden;
+  transform: translateY(-50%);
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.search-input {
+  width: 100%;
+  margin-right: 14px;
+  background-color: var(--color-white);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-lilac);
+  color: var(--color-lilac);
+}
+
+.search-input::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-light-grey);
+}
+
+.search-submit {
+  margin-right: 20px;
+}
+
+.search__show {
+  transform: translateY(0%);
+  visibility: visible;
+}
+
 .hero {
   background-image: url("../imgs/hero__img.jpg");
   background-position: center;
