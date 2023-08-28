@@ -261,54 +261,54 @@
           <ul class="events__list list-reset">
             <li class="events__item events__img1">
               <article class="events__blog">
-                  <div class="events__wrap">
-                    <span class="events__place"> Музей им. Щусева </span>
-                    <time class="events__time">с 20 марта по 30 апреля</time>
-                  </div>
-                  <h3 class="events__subtitle">
-                    Книжная гравюра в&nbsp;живом восприятии
-                  </h3>
-                  <p class="events__descr section-descr">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто,
-                    основатель художественной
-                    династии,&nbsp;которую&nbsp;продолжили его брат&nbsp;Давид
-                    и&nbsp;сын&nbsp;Ридольфо
-                  </p>
-                  <a href="#" class="events__link events__detail"> Подробнее</a>
+                <div class="events__wrap">
+                  <span class="events__place"> Музей им. Щусева </span>
+                  <time class="events__time">с 20 марта по 30 апреля</time>
+                </div>
+                <h3 class="events__subtitle">
+                  Книжная гравюра в&nbsp;живом восприятии
+                </h3>
+                <p class="events__descr section-descr">
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто,
+                  основатель художественной
+                  династии,&nbsp;которую&nbsp;продолжили его брат&nbsp;Давид
+                  и&nbsp;сын&nbsp;Ридольфо
+                </p>
+                <a href="#" class="events__link events__detail"> Подробнее</a>
               </article>
             </li>
             <li class="events__item events__img2">
               <article class="events__blog">
-                  <div class="events__wrap">
-                    <span class="events__place"> ММОМА </span>
-                    <time class="events__time" datetime="2022-12-12 17:30"
-                      >24 марта 19:00</time
-                    >
-                  </div>
-                  <h3 class="events__subtitle">
-                    &laquo;Открытая дискуссия&raquo;. Дмитрий&nbsp;Петров
-                    и&nbsp;Сергей Ильин.
-                  </h3>
-                  <p class="events__descr section-descr">
-                    Высокий уровень вовлечения представителей целевой аудитории
-                    является чётким доказательством простого факта
-                  </p>
-                  <a href="#" class="events__link events__detail">Подробнее</a>
+                <div class="events__wrap">
+                  <span class="events__place"> ММОМА </span>
+                  <time class="events__time" datetime="2022-12-12 17:30"
+                    >24 марта 19:00</time
+                  >
+                </div>
+                <h3 class="events__subtitle">
+                  &laquo;Открытая дискуссия&raquo;. Дмитрий&nbsp;Петров
+                  и&nbsp;Сергей Ильин.
+                </h3>
+                <p class="events__descr section-descr">
+                  Высокий уровень вовлечения представителей целевой аудитории
+                  является чётким доказательством простого факта
+                </p>
+                <a href="#" class="events__link events__detail">Подробнее</a>
               </article>
             </li>
             <li class="events__item events__img3">
               <article class="events__blog">
-                  <div class="events__wrap">
-                    <span class="events__place"> Еврейский музей </span>
-                    <time class="events__time"> с 31 марта по 21 апреля</time>
-                  </div>
-                  <h3 class="events__subtitle">Выставка «Формация 2020»</h3>
-                  <p class="events__descr section-descr">
-                    Идейные соображения высшего порядка, а&nbsp;также
-                    современная методология разработки играет важную роль
-                    в&nbsp;формировании глубокомысленных рассуждений
-                  </p>
-                  <a href="#" class="events__link events__detail">Подробнее</a>
+                <div class="events__wrap">
+                  <span class="events__place"> Еврейский музей </span>
+                  <time class="events__time"> с 31 марта по 21 апреля</time>
+                </div>
+                <h3 class="events__subtitle">Выставка «Формация 2020»</h3>
+                <p class="events__descr section-descr">
+                  Идейные соображения высшего порядка, а&nbsp;также современная
+                  методология разработки играет важную роль в&nbsp;формировании
+                  глубокомысленных рассуждений
+                </p>
+                <a href="#" class="events__link events__detail">Подробнее</a>
               </article>
             </li>
           </ul>
@@ -370,11 +370,13 @@
               </li>
               <li class="address__item">
                 <form
+                  id="form"
                   action="https://jsonplaceholder.typicode.com/posts"
                   method="POST"
                   class="address__form"
                 >
                   <input
+                    id="userName"
                     class="form-input"
                     type="text"
                     name="name"
@@ -382,13 +384,14 @@
                     required
                   />
                   <input
+                    id="userPhone"
                     class="form-input"
                     type="tel"
                     name="phone"
                     placeholder="Телефон*"
                     required
                   />
-                  <button type="submit" class="form-btn btn-reset">
+                  <button type="submit" class="form-btn btn-reset" data-just-validate-fallback-disabled="true">
                     Заказать <span class="btn-span">обратный звонок</span>
                   </button>
                 </form>
@@ -512,5 +515,6 @@
       </div>
     </footer>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./js/validate.js"></script>
   </body>
 </html>
