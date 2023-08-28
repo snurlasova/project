@@ -159,7 +159,7 @@ img {
   line-height: normal;
 }
 
-.section__descr {
+.section-descr {
   color: var(--color-dark-charcoal);
   font-size: 16px;
   font-weight: 400;
@@ -223,7 +223,7 @@ img {
 }
 
 .nav__link {
-  padding: 2px 8px;
+  padding: 3px 6px;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
@@ -813,6 +813,7 @@ input[type="tel"]:focus {
 .footer__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 45px 0;
 }
 
