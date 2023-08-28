@@ -117,7 +117,6 @@ img {
   font-display: swap;
 }
 
-
 :root {
   --color-black: #000000;
   --color-dark-charcoal: #333333;
@@ -213,7 +212,7 @@ img {
   margin-right: 172px;
 }
 
-.search-btn{
+.search-btn {
   margin-left: auto;
 }
 
@@ -480,7 +479,7 @@ img {
   margin-bottom: 50px;
 }
 
-.catalog__img{
+.catalog__img {
   margin-right: 50px;
 }
 
@@ -498,7 +497,7 @@ img {
   flex-wrap: wrap;
 }
 
-.events__item{
+.events__item {
   overflow: hidden;
   border: 1px solid var(--color-light-grey);
   min-height: 700px;
@@ -531,10 +530,6 @@ img {
 .events__item:not(:last-child) {
   margin-right: 50px;
 }
-
-/* .events__description {
-  padding: 15px 50px 41px 50px;
-} */
 
 .events__item:nth-child(3) .events__descr {
   margin-bottom: 93px;
@@ -584,7 +579,7 @@ img {
   width: 100%;
   height: 1px;
   background-color: var(--color-purple);
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .events__link:focus-visible {
@@ -592,22 +587,22 @@ img {
   background-color: var(--color-purple);
 }
 
-.events__detail:focus-visible::before{
+.events__detail:focus-visible::before {
   background-color: var(--color-purple);
 }
 
-.events__link:hover:not(:focus-visible){
+.events__link:hover:not(:focus-visible) {
   color: var(--color-violet);
 }
 
-.events__detail:hover:not(:focus-visible)::before  {
+.events__detail:hover:not(:focus-visible)::before {
   background-color: var(--color-violet);
 }
 
-.events__link:active:not(:focus-visible){
+.events__link:active:not(:focus-visible) {
   color: var(--color-dark-charcoal);
 }
-.events__detail:active:not(:focus-visible)::before  {
+.events__detail:active:not(:focus-visible)::before {
   background-color: var(--color-dark-charcoal);
 }
 
@@ -623,7 +618,7 @@ img {
 
 .project__descr {
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 66px;
   max-width: 1080px;
 }
 
@@ -693,10 +688,8 @@ img {
   flex-shrink: 0;
   background-color: var(--color-white);
   cursor: pointer;
-}
-
-.form-input {
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .form-input:focus-visible {
