@@ -3,7 +3,6 @@
     margin-right: auto;
   }
 
-
   .checkbox-list {
     margin-right: 50px;
   }
@@ -198,7 +197,7 @@
   .contacts__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 20px;
-}
+  }
 
   .contacts__item:nth-child(1) {
     margin-bottom: 23px;
@@ -295,13 +294,13 @@
     max-width: 100%;
   }
 
-  .header{
+  .header {
     overflow: hidden;
     padding-top: 32px;
     padding-bottom: 32px;
   }
 
-  .header__logo{
+  .header__logo {
     margin-bottom: 25px;
   }
 
@@ -316,10 +315,10 @@
 
   .nav__item:not(:last-child) {
     margin-right: 54px;
-}
+  }
 
   .menu-wrapper {
-      overflow-x: scroll;
+    overflow-x: scroll;
     /* Добавим дополнительный нижнее поле
     элементу, в котором прокручивается меню */
     padding-bottom: 20px;
@@ -412,9 +411,9 @@
   .contacts__item:nth-child(2) {
     margin-right: 0;
     margin-bottom: 30px;
-}
+  }
 
-  .form-btn{
+  .form-btn {
     padding: 15px 35px;
   }
 
@@ -459,6 +458,16 @@
     font-size: 12px;
   }
 
+  .nav__link:hover:not(:focus-visible) {
+    color: var(--color-white);
+    transition: none;
+  }
+
+  .nav__link:active:not(:focus-visible) {
+    color: var(--color-violet);
+    transition: color 0.3s ease-in-out;
+  }
+
   .nav__item:not(:last-child) {
     margin-right: 48px;
   }
@@ -468,7 +477,7 @@
     height: 18px;
   }
 
-  .search-close .svg-close{
+  .search-close .svg-close {
     width: 18px;
     height: 18px;
   }
@@ -480,6 +489,15 @@
   }
   .search-submit {
     margin-right: 10px;
+  }
+
+  .search-btn:hover:not(:focus-visible) .search {
+    fill: var(--color-white);
+    transition: none;
+  }
+
+  .search-btn:active:not(:focus-visible) .search {
+    fill: var(--color-purple);
   }
 
   .search-input::placeholder {
@@ -532,6 +550,16 @@
     text-align: center;
     font-size: 12px;
     line-height: normal;
+  }
+
+  .btn:hover:not(:focus-visible) {
+    outline: none;
+  }
+
+  .btn:active:not(:focus-visible),
+  .btn:active {
+    outline: 3px solid var(--color-lavender);
+    background-color: var(--color-violet);
   }
 
   .section-title {
@@ -709,6 +737,11 @@
     margin-bottom: 20px;
   }
 
+  .form-input:hover:not(:focus-visible) {
+    background-color: var(--color-white);
+    transition: none;
+  }
+
   .form-btn {
     width: 128px;
     height: 40px;
@@ -716,6 +749,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .form-btn:hover:not(:focus-visible) {
+    background-color: var(--color-white);
+    color: var(--color-purple);
+    transition: none;
+  }
+
+  .form-btn:active:not(:focus-visible),
+  .form-btn:active {
+    outline: none;
+    background-color: var(--color-violet);
+    color: var(--color-white);
+    transition: background-color 0.3s ease-in-out;
   }
 
   .btn-span {
@@ -740,6 +787,30 @@
     height: 50px;
   }
 
+  .connection-link:hover:not(:focus-visible) .connection-whatsapp {
+    opacity: 1;
+    transition: none;
+  }
+
+  .connection-link:active:not(:focus-visible) .connection-whatsapp {
+    fill: var(--color-green);
+    opacity: 1;
+    border: 1px solid var(--color-purple);
+    border-radius: 100%;
+  }
+
+  .connection-link:hover:not(:focus-visible) .connection-telegram {
+    opacity: 1;
+    transition: none;
+  }
+
+  .connection-link:active:not(:focus-visible) .connection-telegram {
+    fill: var(--color-light-blue);
+    opacity: 1;
+    border: 1px solid var(--color-purple);
+    border-radius: 100%;
+  }
+
   .contacts {
     margin-bottom: 45px;
   }
@@ -754,15 +825,24 @@
     flex-wrap: wrap;
   }
 
-  .footer__svg{
+  .footer__svg {
     width: 50px;
     height: 50px;
+  }
+
+  .social-link:hover:not(:focus-visible) .footer__svg {
+    fill: var(--color-light-grey);
+    transition: none;
+  }
+
+  .social-link:active:not(:focus-visible) .footer__svg {
+    fill: var(--color-purple);
   }
 
   .social-item:not(:last-child) {
     margin-right: 20px;
     margin-bottom: 16px;
-}
+  }
 }
 
 @media (max-width: 320px) {
