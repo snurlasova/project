@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -280,11 +281,9 @@ img {
   fill: var(--color-purple);
 }
 
-
 .search-submit .search {
   fill: var(--color-lilac);
 }
-
 
 .search-submit:focus-visible .search {
   outline: none;
@@ -301,12 +300,12 @@ img {
   fill: var(--color-violet);
 }
 
-.search-close .svg-close{
+.search-close .svg-close {
   width: 28px;
   height: 28px;
 }
 
-.search-close:focus-visible .svg-close{
+.search-close:focus-visible .svg-close {
   outline: none;
   outline: 2px solid var(--color-lilac);
   outline-offset: 5px;
