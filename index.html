@@ -180,8 +180,8 @@
         <div class="container">
           <h2 class="gallery__title section-title">Галерея</h2>
           <div class="gallery__content">
-            <ul class="checkbox-items__list list-reset">
-              <li class="checkbox-items__list-item">
+            <ul class="checkbox-list list-reset">
+              <li class="checkbox-item">
                 <label class="custom-checkbox flex">
                   <input
                     type="checkbox"
@@ -191,7 +191,7 @@
                   <span class="custom-checkbox__text">XIX век</span>
                 </label>
               </li>
-              <li class="checkbox-items__list-item">
+              <li class="checkbox-item">
                 <label class="custom-checkbox">
                   <input
                     type="checkbox"
@@ -201,7 +201,7 @@
                   <span class="custom-checkbox__text">XX век</span>
                 </label>
               </li>
-              <li class="checkbox-items__list-item">
+              <li class="checkbox-item">
                 <label class="custom-checkbox">
                   <input
                     type="checkbox"
@@ -438,20 +438,20 @@
       <section id="contacts" class="contacts">
         <div class="container">
           <h2 class="contacts__title section-title visually-hidden ">Контакты</h2>
-          <address class="address__blog">
-            <ul class="address__list list-reset">
-              <li class="address__item">
-                <span class="address__name">Шоурум &#8470;&nbsp;4</span>
-                <span class="address__place"
+          <contacts class="contacts__address">
+            <ul class="contacts__list list-reset">
+              <li class="contacts__item">
+                <span class="contacts__name">Шоурум &#8470;&nbsp;4</span>
+                <span class="contacts__place"
                   >Леонтьевский переулок, дом 5/1</span
                 >
               </li>
-              <li class="address__item">
+              <li class="contacts__item">
                 <form
                   id="form"
                   action="https://jsonplaceholder.typicode.com/posts"
                   method="POST"
-                  class="address__form"
+                  class="contacts__form"
                 >
                   <input
                     id="userName"
@@ -478,7 +478,7 @@
                   </button>
                 </form>
               </li>
-              <li class="address__item">
+              <li class="contacts__item">
                 <strong class="connection-title">Связаться в один клик</strong>
                 <ul class="connection-list list-reset">
                   <li class="connection-item">
@@ -540,7 +540,7 @@
                 </ul>
               </li>
             </ul>
-          </address>
+          </contacts>
         </div>
       </section>
     </main>
@@ -549,7 +549,7 @@
         <div class="footer__content">
           <a href="#" class="logo footer__logo">
             <img
-              class="header__svg"
+              class="footer__svg"
               src="./imgs/logo_in_footer.svg"
               alt="Blanchard logo"
             />

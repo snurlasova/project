@@ -4,7 +4,7 @@
   }
 
 
-  .checkbox-items__list {
+  .checkbox-list {
     margin-right: 50px;
   }
 
@@ -12,12 +12,12 @@
     margin-right: 50px;
   }
 
-  .address__list {
+  .contacts__list {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .address__item:not(:last-child) {
+  .contacts__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 30px;
   }
@@ -89,7 +89,7 @@
     padding-bottom: 76px;
   }
 
-  .checkbox-items__list {
+  .checkbox-list {
     margin-bottom: 27px;
     margin-right: 0;
   }
@@ -195,16 +195,16 @@
     margin-bottom: 38px;
   }
 
-  .address__item:not(:last-child) {
+  .contacts__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 20px;
 }
 
-  .address__item:nth-child(1) {
+  .contacts__item:nth-child(1) {
     margin-bottom: 23px;
   }
 
-  .address__name {
+  .contacts__name {
     line-height: 38px;
   }
 
@@ -409,7 +409,7 @@
     margin-bottom: 39px;
   }
 
-  .address__item:nth-child(2) {
+  .contacts__item:nth-child(2) {
     margin-right: 0;
     margin-bottom: 30px;
 }
@@ -481,7 +481,6 @@
   .search-submit {
     margin-right: 10px;
   }
-
 
   .search-input::placeholder {
     font-weight: 500;
@@ -692,12 +691,12 @@
     margin-bottom: 8px;
   }
 
-  .address__name {
+  .contacts__name {
     font-size: 18px;
     line-height: normal;
   }
 
-  .address__item:nth-child(1) {
+  .contacts__item:nth-child(1) {
     margin-bottom: 11px;
   }
 
@@ -730,7 +729,7 @@
     line-height: 32px; /* 177.778% */
   }
 
-  .address__item:nth-child(2) {
+  .contacts__item:nth-child(2) {
     margin-right: 0;
     margin-bottom: 21px;
   }
