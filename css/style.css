@@ -20,19 +20,9 @@ img {
 
 @font-face {
   font-family: "Open Sans";
-  src: local("Open Sans Italic"), local("OpenSans-Italic"),
-    url("OpenSans-Italic.woff2") format("woff2"),
-    url("OpenSans-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
   src: local("Open Sans Regular"), local("OpenSans-Regular"),
-    url("OpenSans-Regular.woff2") format("woff2"),
-    url("OpenSans-Regular.woff") format("woff");
+    url("../font/OpenSans-Regular.woff2") format("woff2"),
+    url("../font/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -41,8 +31,8 @@ img {
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"),
-    url("OpenSans-BoldItalic.woff2") format("woff2"),
-    url("OpenSans-BoldItalic.woff") format("woff");
+    url("../font/OpenSans-BoldItalic.woff2") format("woff2"),
+    url("../font/OpenSans-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -51,8 +41,8 @@ img {
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
-    url("OpenSans-SemiBold.woff2") format("woff2"),
-    url("OpenSans-SemiBold.woff") format("woff");
+    url("../font/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../font/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -61,8 +51,8 @@ img {
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans ExtraBold Italic"), local("OpenSans-ExtraBoldItalic"),
-    url("OpenSans-ExtraBoldItalic.woff2") format("woff2"),
-    url("OpenSans-ExtraBoldItalic.woff") format("woff");
+    url("../font/OpenSans-ExtraBold.woff2") format("woff2"),
+    url("../font/OpenSans-SemiBoldItalic.woff") format("woff");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
@@ -71,8 +61,8 @@ img {
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans Light Italic"), local("OpenSans-LightItalic"),
-    url("OpenSans-LightItalic.woff2") format("woff2"),
-    url("OpenSans-LightItalic.woff") format("woff");
+    url("../font/OpenSans-LightItalic.woff2") format("woff2"),
+    url("../font/OpenSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -81,8 +71,8 @@ img {
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans Bold"), local("OpenSans-Bold"),
-    url("OpenSans-Bold.woff2") format("woff2"),
-    url("OpenSans-Bold.woff") format("woff");
+    url("../font/OpenSans-Bold.woff2") format("woff2"),
+    url("../font/OpenSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -91,8 +81,8 @@ img {
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans SemiBold Italic"), local("OpenSans-SemiBoldItalic"),
-    url("OpenSans-SemiBoldItalic.woff2") format("woff2"),
-    url("OpenSans-SemiBoldItalic.woff") format("woff");
+    url("../font/OpenSans-SemiBoldItalic.woff2") format("woff2"),
+    url("../font/OpenSans-SemiBoldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -111,8 +101,8 @@ img {
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans Light"), local("OpenSans-Light"),
-    url("OpenSans-Light.woff2") format("woff2"),
-    url("OpenSans-Light.woff") format("woff");
+    url("../font/OpenSans-Light.woff2") format("woff2"),
+    url("../font/OpenSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
