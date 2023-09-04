@@ -144,7 +144,10 @@
       <section class="hero">
         <div class="container">
           <div class="hero__content">
-            <h1 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h1>
+            <h1 class="hero__title visually-hidden">
+              Blanchard Художественная галерея
+            </h1>
+            <span class="hero__span">Прикоснитесь к&nbsp;прекрасному</span>
             <p class="hero__descr">
               Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация
               намеченных плановых заданий создаёт предпосылки для новых
@@ -465,6 +468,7 @@
                     type="text"
                     name="name"
                     placeholder="Имя*"
+                    pattern="[A-Za-z0-9]{4,}"
                     required
                   />
                   <input
@@ -473,6 +477,7 @@
                     type="tel"
                     name="phone"
                     placeholder="Телефон*"
+                    pattern="[A-Za-z0-9]{4,}"
                     required
                   />
                   <button
@@ -480,7 +485,7 @@
                     class="form-btn btn-reset"
                     data-just-validate-fallback-disabled="true"
                   >
-                    Заказать <span class="btn-span">обратный звонок</span>
+                    Заказать <span class="btn-span"> обратный звонок</span>
                   </button>
                 </form>
               </li>
@@ -572,7 +577,12 @@
           </a>
           <ul class="social-list list-reset">
             <li class="social-item">
-              <a href="https://vk.com/" class="social-link" target="_blank" aria-label="мы в соцсети вконтакте">
+              <a
+                href="https://vk.com/"
+                class="social-link"
+                target="_blank"
+                aria-label="мы в соцсети вконтакте"
+              >
                 <svg
                   class="footer__svg"
                   width="45"
@@ -588,7 +598,12 @@
               </a>
             </li>
             <li class="social-item">
-              <a href="https://ok.ru/" class="social-link" target="_blank" aria-label="мы в соцсети одноклассники" >
+              <a
+                href="https://ok.ru/"
+                class="social-link"
+                target="_blank"
+                aria-label="мы в соцсети одноклассники"
+              >
                 <svg
                   class="footer__svg"
                   width="45"
@@ -612,8 +627,6 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-    <script src="./js/validate.js"></script>
     <script src="./js/search.js"></script>
   </body>
 </html>

@@ -56,6 +56,10 @@
   .events__item:nth-child(3) .events__descr {
     margin-bottom: 68px;
   }
+
+  .events__item {
+    padding: 313px 30px 41px 30px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -211,10 +215,6 @@
     padding-top: 6px;
   }
 
-  .form-btn {
-    width: 343px;
-  }
-
   .footer__svg {
     width: 60px;
     height: 60px;
@@ -261,11 +261,8 @@
   }
 
   .form-input {
-    width: 323px;
-  }
-
-  .form-input:nth-child(1) {
     margin-bottom: 12px;
+    padding: 17px 102px 17px 22px;
   }
 
   .form-input:nth-child(2) {
@@ -273,7 +270,7 @@
   }
 
   .form-btn {
-    width: 317px;
+    padding: 12px 25px;
   }
 
   .events__item:nth-child(1) .events__descr {
@@ -516,7 +513,7 @@
     margin-bottom: 9px;
   }
 
-  .hero__title {
+  .hero__span {
     margin-bottom: 12px;
     text-align: center;
     font-size: 32px;
@@ -766,7 +763,7 @@
   }
 
   .btn-span {
-    display: none;
+    display: inline-block;
   }
 
   .connection-title {

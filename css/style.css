@@ -220,6 +220,7 @@ img {
 .nav__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav__link {
@@ -357,7 +358,8 @@ img {
   padding: 146px 0;
 }
 
-.hero__title {
+.hero__span {
+  display: inline-block;
   margin: 0;
   margin-bottom: 20px;
   font-size: 78px;
@@ -380,7 +382,7 @@ img {
 .hero__btn {
   border-radius: 100px;
   background-color: var(--color-purple);
-  padding: 24.5px 40px;
+  padding: 23.5px 36px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -389,12 +391,12 @@ img {
 }
 
 .about-us {
-  padding: 85px 0 69px 0;
+  padding: 80px 0 73px 0;
 }
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
   color: var(--color-dark-charcoal);
 }
 
@@ -409,13 +411,13 @@ img {
   background-repeat: no-repeat;
   background-color: var(--color-dark-charcoal);
   background-size: cover;
-  margin-bottom: 88px;
+  margin-bottom: 80px;
+  padding-top: 80px;
 }
 
 .gallery__title {
   margin: 0;
-  margin-bottom: 24px;
-  padding-top: 85px;
+  margin-bottom: 20px;
   color: var(--color-white);
 }
 
@@ -502,12 +504,12 @@ img {
 }
 
 .catalog {
-  margin-bottom: 88px;
+  margin-bottom: 80px;
 }
 
 .catalog__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   color: var(--color-dark-charcoal);
 }
 
@@ -556,6 +558,7 @@ img {
 
 .catalog__img {
   margin-right: 50px;
+  object-fit: cover;
 }
 
 .events {
@@ -583,7 +586,7 @@ img {
   vertical-align: top;
   background-position: top center;
   background-repeat: no-repeat;
-  padding: 313px 50px 41px 50px;
+  padding: 310px 50px 41px 50px;
 }
 
 .events__img1 {
@@ -620,12 +623,12 @@ img {
 }
 
 .events__time {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .events__subtitle {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: var(--color-dark-charcoal);
   font-size: 24px;
   font-weight: 600;
@@ -634,7 +637,7 @@ img {
 
 .events__descr {
   margin: 0;
-  margin-bottom: 68px;
+  margin-bottom: 60px;
 }
 
 .events__link {
@@ -683,17 +686,17 @@ img {
 
 .project {
   border-bottom: 1px solid var(--color-light-grey);
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .project__title {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
 }
 
 .project__descr {
   margin: 0;
-  margin-bottom: 66px;
+  margin-bottom: 32px;
   max-width: 1080px;
 }
 
@@ -716,7 +719,7 @@ img {
 }
 
 .contacts {
-  margin-bottom: 36px;
+  margin-bottom: 41px;
 }
 
 .contacts__address {
@@ -726,10 +729,11 @@ img {
 .contacts__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .contacts__item:nth-child(1) {
-  margin-right: 96px;
+  margin-right: 82px;
 }
 
 .contacts__item:nth-child(2) {
@@ -753,18 +757,19 @@ img {
   line-height: 32px; /* 200% */
 }
 
+.contacts__form {
+  display: flow-root;
+}
+
 .form-input {
   box-sizing: border-box;
   border: 1px solid var(--color-dark-charcoal);
   border-radius: 100px;
-  padding: 9px 43px 9px 24px;
-  width: 270px;
-  height: 50px;
+  padding: 17px 54px 17px 22px;
   flex-shrink: 0;
   background-color: var(--color-white);
   cursor: pointer;
-  margin-right: 15px;
-  margin-bottom: 10px;
+  margin-right: 21px;
 }
 
 .form-input:focus-visible {
@@ -787,14 +792,13 @@ input[type="tel"]:focus {
 }
 
 .form-btn {
-  width: 329px;
-  height: 50px;
   flex-shrink: 0;
   border-radius: 100px;
   border: 2px solid var(--color-purple);
   text-align: center;
   font-size: 18px;
   font-weight: 700;
+  padding: 12px 32px;
   line-height: normal;
   color: var(--color-purple);
   background-color: transparent;
@@ -817,6 +821,10 @@ input[type="tel"]:focus {
   background-color: var(--color-violet);
   color: var(--color-white);
   transition: background-color 0.3s ease-in-out;
+}
+
+.btn-span {
+  display: inline-block;
 }
 
 .connection-title {
@@ -882,7 +890,7 @@ input[type="tel"]:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 0;
+  padding: 46px 0;
 }
 
 .social-list {
