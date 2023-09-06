@@ -917,3 +917,7 @@ input[type="tel"]:focus {
 .social-link:active:not(:focus-visible) .footer__svg {
   fill: var(--color-purple);
 }
+
+.menu-burger {
+  display: none;
+}
